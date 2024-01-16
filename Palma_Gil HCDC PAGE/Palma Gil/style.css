@@ -1,0 +1,327 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Fjalla One', sans-serif;
+}
+/*------------------------ HEADER--------------------------------- */
+
+.header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 4%;	
+
+	border-bottom: 8px rgba(129, 129, 129, .6) solid;
+
+
+}
+
+.header li,.header ul, .header ,.navbar, nav{
+	width: 100;	
+	background-color: white;
+}
+.header img{
+	width: 300px;
+	height: 80px;
+	cursor: pointer;
+	background-color: white;
+}
+
+
+.navbar ul{
+	list-style: none;
+	text-align: right;
+}
+
+.navbar  li{
+	display: inline-block;
+	padding:  0px 80px;
+	font-size: 17px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #b00d0d;
+	padding: 15px 25px;
+
+}
+.navbar ul li :hover{
+	color: white;
+	background-color: rgba(176, 13, 13, 0.76);
+	box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
+/*---------------------------------------SLIDESHOW----------------------------*/
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+.hailhcdc {
+  color: #f2f2f2;
+  font-size: 100px;
+  padding: 8px 100px;
+  position: absolute;
+  top: 210px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*----------------------------------HCDC BOX----------------------------*/
+.hcdcbox P{
+  color: #f2f2f2;
+  font-size: 100px;
+  padding: 8px 100px;
+  position:  relative;
+  top: 210px;
+  width: 100%;
+  text-align: center;
+}
+.hcdcbox {
+  display: inline-block;
+  min-height: 100vh;
+    width:100%;
+    background-image:linear-gradient(rgb(4,9,30,0.7),rgba(4,9,30,0.1)),url(resources/hcdcbldg.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bigthree {
+  width: 100%;
+    color: white;
+    position:relative;
+    align-items: center;
+    top: 300px;
+
+
+    display:flex; 
+    justify-content: space-between;     
+    padding: 50px;
+    margin-right: -20px ;
+
+
+}
+.bigthree h1{
+
+    font-size: 50px;
+    padding: 80px 75px;
+   
+
+}
+h1.red:hover{
+  background: rgba(142, 4, 4, .2);
+  box-shadow: 10px 5px 40px -10px rgba(142, 4, 4, 1);
+  transition: all 0.3s ease 0s;
+  letter-spacing: 2px;
+} 
+h1.white:hover{
+  background: rgba(217, 232, 244,.2);
+  box-shadow: 10px 5px 40px -10px rgba(217, 232, 244, 1);
+  transition: all 0.3s ease 0s;
+  letter-spacing: 2px;  
+}h1.blue:hover{
+  background: rgba(0, 61, 255, .2);
+  box-shadow: 10px 5px 40px -10px rgba(0, 61, 255, 1);
+  transition: all 0.3s ease 0s;
+  letter-spacing: 2px;  
+}
+/*--------------------------------COURSEOVERVIEW-------------------------------------*/
+.courseover h1{
+  padding-bottom : 10px ;
+  font-size: 50px;
+  color: white;
+  background-color: #b00d0d;background-color: #b00d0d;
+}
+.courseover p{
+  padding-top: 6px;
+  
+  amily: 'Merriweather', serif;
+}
+.courseover {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 80px;
+}
+.courseover a{
+ text-decoration: none;
+ color: black;
+}
+.courseboxrow{
+  margin top: 5%;
+  display: flex;
+  padding: 15px 40px;
+  justify-content: space-between;
+}
+.courseover-row-bed,.courseover-row-under,.courseover-row-grad{ 
+  padding: 50px 40px;
+  margin: 7px 8px;
+  border-radius: 20%;
+  border: 2px red solid;   
+}
+.courseover-row-bed:hover,.courseover-row-under:hover,.courseover-row-grad:hover{
+  box-shadow: -1px 7px 40px -10px rgba(249, 32, 32, 1);
+
+}
+/*-------------------------------------------ABOUT PAGE-----------------------------------------------*/
+.visionmission h1{
+  font-size: 80px;
+  border-bottom: 5px  #b00d0d solid;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background-image:linear-gradient(rgb(4,9,30,0.7),rgba(4,9,30,0.1)),url(resources/hcdcheader.png);
+ 
+}
+.visionandpic{
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.vistitle{
+  display: inline-block;
+
+}
+.vistitle h2{
+  padding: 10px 30px;
+  margin: 6%;
+  font-size: 50px;
+  text-align: center;
+}
+.vistitle p, ul{
+    padding: 10px 90px 10px 40px;
+
+}
+.hcdcpic img{
+  width: 900px;
+  height: 500px;
+  padding: 0px 20px;
+}
+.vistitle ul{
+  list-style: inside;
+}
+
+/*---------------------------------------COURSES PAGE--------------------------------------------------*/
+.courses h1{
+  font-size: 80px;
+  border-bottom: 5px  #b00d0d solid;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background-image:linear-gradient(rgb(4,9,30,0.7),rgba(4,9,30,0.1)),url(resources/hcdcheadercourse.png);
+  margin-bottom: 80px;
+}
+.coursepic{
+
+
+}
+.courselist-box{
+  margin: 2% 2%;
+  display: flex;
+  padding: 1% 350px;
+  border-bottom: 2px #b00d0d solid;
+}
+.courselist-box h2{
+  padding: 4px 0px;
+  padding-left: 30px;
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+
+}
+.coursenames{
+    padding: 0% 2px;
+}
+/*@media (max-width: 700px){
+
+.bigthree {
+	width: 100%;
+    color: white;
+    position:absolute;
+	top: 60%;
+    left:30%;
+    transform:translate(-50%,-50%);
+    display:flex; 
+    justify-content: space-between;     
+    padding: 15px;
+}
+
+    .bigthree h1{
+        font-size: 30px;
+        padding: 80px 45px;
+    }
+    .navbar ul li{
+        display:box;
+        padding: 10px;
+    }   
+    .navbar{ 
+        background: teal;
+        height:100vh;
+        width:160px;
+        position:absolute;
+        top: 0;
+		right: -200px;
+		text-align: left;
+        z-index:2;
+        display:block;
+        transition: 1s;
+        }   
+    nav .bi-x-circle{
+        display:block;
+        padding: 20px 0px 0px 0px;
+        margin: 1px 130px;
+        color:white;
+        cursor: pointer;
+        font-size: 20px;
+        
+        
+    }
+    nav{
+        padding:0px
+    }
+    nav .bi-list{
+        display:block;
+        width: 29px;
+        color:white;
+        cursor: pointer;
+        position: relative;
+        right: -89%;
+        top:15px;
+        font-size: 35px;
+       
+    }
+    .navbar ul{
+        padding:1px;
+        position: relative;
+        left: 2px;
+        top:10px;  
+    }
+}
+*/

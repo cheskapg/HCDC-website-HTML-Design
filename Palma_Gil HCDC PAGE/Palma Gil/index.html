@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Holy Cross of Davao College</title>
+    <!-- FONTS !-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!--ref-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+       
+        <section class="header">
+
+            <a href="index.html"><img src="resources/hcdclogo.png"></a>    
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href = "index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href = "about.html">ABOUT HCDC</a>
+                        </li>
+                        <li>
+                            <a href = "courses.html">COURSES</a>
+                        </li>
+                    <ul>                              
+                </div>  
+            </nav>
+        </section>
+        
+
+  <!-- slideshow=--------------------------------------------------------- -->
+  <section class=" hcdcslide">
+           
+                <div class="slideshow-container">
+                <div class="mySlides fade">    
+                    <div class="hailhcdc">HAIL HOLY CROSS!</div>              
+                    <img src="resources/hcdcbldg2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">    
+                    <div class="hailhcdc">TO TRUTH</div>             
+                    <img src="resources/hcdcbldg6.jpg" style="width:100%">
+                </div>
+
+                 <div class="mySlides fade">
+                    <div class="hailhcdc">FROM FAITH</div>    
+                    <img src="resources/hcdcbldg4.jpg" style="width:100%">
+                </div>
+
+<br>
+
+
+        </section>
+        <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+// Next/previous controls
+            function plusSlides(n) {
+             showSlides(slideIndex += n);
+            }
+
+// Thumbnail image controls
+        function currentSlide(n) {
+             showSlides(slideIndex = n);
+            }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+ 
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";           
+        }
+            
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+  
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <!-------------------------------------------------------------------------------- -->
+        <section >
+            <div class="hcdcbox">
+                 <p> HCDC CORE VALUES </p>
+                <div class="bigthree">
+
+                    <h1 class="red">JUSTICE</h1>
+                    <h1 class="white">PEACE</h1>
+                    <h1 class="blue">SERVICE</h1>
+
+                </div>
+            </div>     
+
+        </section>
+        <br>
+
+         <section class="coursesoverview">
+            <div class="courseover">
+                <h1>ACADEMICS</h1>
+                <p> 
+                    Below are the different programs for each level of degree
+                </p>
+                     <a href = "courses.html"> 
+                       <div class="courseboxrow">
+
+                            <div class="courseover-row-bed">
+                              <h2>BASIC EDUCATION</h2>
+                              <p>
+                                 The Basic Education Department of the Holy Cross of Davao College, Inc. is a Catholic academic institution envisioning family – oriented community witnessing the ideals of excellence and stewardship.
+                              </p>
+                            </div>                  
+                            <div class="courseover-row-under">
+                                <h2>UNDERGRADUATE</h2>
+                                <p>
+                                    The Basic Education Department of the Holy Cross of Davao College, Inc. is a Catholic academic institution envisioning family – oriented community witnessing the ideals of excellence and stewardship.
+                                </p>
+                            </div>
+                            <div class="courseover-row-grad">
+                                <h2>GRADUATE SCHOOL</h2>
+                                <p>
+                                    Applicants for admission to the master’s degree program and doctoral program must have the proper and corresponding undergraduate and graduate academic background respectively.
+                               </p>
+                            </div>
+                        </div> 
+                    </a>
+            </div>
+        
+       </section>
+       <section class="footer">
+           
+       </section>
+</body>
+</html>
